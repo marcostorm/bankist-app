@@ -11,3 +11,6 @@ Built with:
 - Javascript
 - Flexbox
 - Grid
+
+Flowchart:
+![Bankist-flowchart](https://user-images.githubusercontent.com/13144831/225055868-3d917127-236a-49bd-b779-9f6d9b7c0d85.png)
