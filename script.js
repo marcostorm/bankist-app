@@ -135,6 +135,20 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 // checkDogs([3, 5, 2, 12, 7], [9, 16, 6, 8, 3]);
 
+const averageHumanAge = function calcAverageHumanAge(dogsAge) {
+  let humanAge = [];
+  dogsAge.map(function (dogAge, i) {
+    if (dogAge <= 2) humanAge.push(2 * dogAge);
+    else humanAge.push(16 + dogAge * 4);
+  });
+  console.log(`Human age: ${humanAge.join(', ')}`);
+
+  let dogsMajorAge = humanAge.filter(dogAge => dogAge >= 18);
+  console.log(`Dogs major age:  ${dogsMajorAge.join(', ')}`);
+};
+
+averageHumanAge([5, 2, 4, 1, 15, 8, 3]);
+
 const eurToUsd = 1.1;
 
 const movementUSD = movements.map(mov => mov * eurToUsd);
@@ -176,4 +190,4 @@ const max = movements.reduce((acc, mov) => {
   else return mov;
 }, movements[0]);
 
-console.log(max);
+//console.log(max);
